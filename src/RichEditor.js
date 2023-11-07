@@ -274,7 +274,7 @@ export default class RichTextEditor extends Component {
           source={viewHTML}
           onLoad={that.init}
           onShouldStartLoadWithRequest={event => {
-            if (event.url !== 'about:blank') {
+            if (event.url !== 'about:blank' && !event.url?.toLowerCase()?.includes('https://www.youtube.com/embed')) {
               this.webviewBridge?.stopLoading();
               Linking?.openURL(event.url);
               return false;
