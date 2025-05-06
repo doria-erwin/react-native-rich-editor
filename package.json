@@ -13,13 +13,12 @@
     "type": "git",
     "url": "https://github.com/wxik/react-native-rich-editor.git"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/react-native": "*"
   },
   "peerDependencies": {
     "react-native": ">=0.50.0",
-    "react-native-webview": ">=7.5.2"
+    "react-native-webview": "git+https://github.com/doria-erwin/react-native-webview.git"
   }
 }
